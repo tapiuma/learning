@@ -1,0 +1,12 @@
+function Sort(){
+  var Sheet;
+  var Last_Row;
+  var Last_Col;
+  
+  Sheet=SpreadsheetApp.getActiveSheet();
+  Last_Row=Sheet.getLastRow();
+  Last_Col=Sheet.getLastColumn();
+  
+  Sheet.getRange(2,1,Last_Row,Last_Col).sort(8);
+  
+}
