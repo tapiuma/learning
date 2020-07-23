@@ -1,0 +1,13 @@
+function myFunction(){
+    var subject = 'フォームへの新しい入力';
+    var body = '';
+    body += 'フォームへの新しい入力がありました。';
+    body += 'スプレッドシートを確認してください。';
+    GmailApp.sendEmail('chii.tana0202@gmail.com',
+    subject,
+    body,
+    {
+        name : 'GASからの送信';
+    }
+    );
+}
